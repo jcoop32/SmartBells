@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name"></string>
+
+    <string-array name="Exercises">
+        <item> </item>
+        <item>bent over rows</item>
+        <item>bicep hammer curls</item>
+        <item>cambered bar curls</item>
+        <item>flat dumbbell press</item>
+        <item>dumbbell rows</item>
+        <item>shoulder press</item>
+        <item>squat</item>
+        <item>lunges</item>
+        <item>dumbbell calf raises</item>
+        <item>dumbbell deadlift</item>
+    </string-array>
+
+
+    <string name="edittext_hint"><font size="35">weight</font></string>
+    <string name="registration_successful">Registration Successful</string>
+    <string name="reg_unsuccesful">Registration Unsuccessful. Please make sure all fields are correct.</string>
+
+
+</resources>

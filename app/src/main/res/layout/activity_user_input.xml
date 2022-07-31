@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserInputActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bgtest5"
+    android:layout_gravity="center"
+    android:gravity="center"
+    >
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarExercise2"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="35dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_workout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:gravity="center"
+                android:text="please select workout"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                />
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_workout"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:popupBackground="@drawable/bg_spinner"
+                android:gravity="center"
+                style="@style/Widget.AppCompat.TextView.SpinnerItem"
+
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_description3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="please enter total weight of dumbbells (in lbs)"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+                <FrameLayout
+                    android:id="@+id/flMinus2.5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="7dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/weight_icon"
+                        android:layout_gravity="center"
+                        android:onClick="minusTwoPoint"
+                        />
+
+
+                    <TextView
+                        android:layout_marginTop="33dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="-2.5 "
+                        android:onClick="minusTwoPoint"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/flMinus5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="7dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/weight_icon"
+                        android:layout_gravity="center"
+                        android:onClick="minusFive"
+                        />
+
+
+                    <TextView
+                        android:layout_marginTop="33dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="bottom"
+                        android:text="-5 "
+                        android:onClick="minusFive"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/flMinus10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/weight_icon"
+                        android:layout_gravity="center"
+                        android:onClick="minusTen"
+                        />
+
+
+                    <TextView
+                        android:layout_marginTop="33dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="bottom"
+                        android:text="-10 "
+                        android:onClick="minusFive"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/etWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="0 lbs"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"/>
+
+                <FrameLayout
+                    android:id="@+id/flPlus10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="7dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/weight_icon"
+                        android:layout_gravity="center"
+                        android:onClick="plusTen"
+                        />
+
+
+                    <TextView
+                        android:layout_marginTop="33dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="bottom"
+                        android:text="+10 "
+                        android:onClick="plusTen"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/flPlus5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="7dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/weight_icon"
+                        android:layout_gravity="center"
+                        android:onClick="plusFive"
+                        />
+
+
+                    <TextView
+                        android:layout_marginTop="33dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="+5 "
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/flPlus2.5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="7dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/weight_icon"
+                        android:layout_gravity="center"
+                        android:onClick="plusTwoPoint"
+                        />
+
+
+                    <TextView
+                        android:layout_marginTop="33dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="+2.5 "
+                        android:onClick="plusTwoPoint"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                </FrameLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_description2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="please enter the amount of reps per set"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginBottom="12sp"
+                />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+                    <Button
+                        android:id="@+id/btnDec"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="#3a6fa3"
+                        android:textSize="15sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/etReps"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="0"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="25dp"
+                        android:textColor="@color/white"
+                        android:inputType="number"
+                        />
+
+                    <Button
+                        android:id="@+id/btnInc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textColor="#3a6fa3"
+                        android:textSize="15sp"
+
+                        />
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="65dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical"
+        >
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/textPrimary"
+            android:text="start"
+            android:textAllCaps="false"
+            android:textColor="#3a6fa3"
+            android:background="@drawable/btn_bg_white"
+            android:textSize="18sp"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

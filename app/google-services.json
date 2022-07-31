@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "965405856998",
+    "firebase_url": "https://smartbells-dfae8-default-rtdb.firebaseio.com",
+    "project_id": "smartbells-dfae8",
+    "storage_bucket": "smartbells-dfae8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965405856998:android:888219f3b57997b15a5727",
+        "android_client_info": {
+          "package_name": "com.cooperj2.smartbells"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "965405856998-011uh0cn0kknd0q50n74rgilni38vann.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPnj3vDgbU69vC3YHih1MOxSJ_5Ex8YBQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "965405856998-011uh0cn0kknd0q50n74rgilni38vann.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

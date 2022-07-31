@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bgtest5"
+    android:layout_gravity="center"
+    android:gravity="center"
+    >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="create account"
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                android:layout_marginBottom="-8dp"
+                />
+
+            <TextView
+                android:id="@+id/tvRegSuccess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/registration_successful"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/green"
+                tools:visibility="invisible"
+                android:visibility="invisible"
+                />
+
+            <TextView
+                android:id="@+id/tvRegUnsuccess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reg_unsuccesful"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/red"
+                tools:visibility="invisible"
+                android:visibility="invisible"
+                />
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="please create username and password"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_Fname"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:boxCornerRadiusTopStart="30dp"
+                app:boxCornerRadiusBottomEnd="30dp"
+                app:boxCornerRadiusBottomStart="30dp"
+                app:boxCornerRadiusTopEnd="30dp"
+                app:errorTextColor="@color/red"
+                app:boxStrokeErrorColor="@color/red"
+                >
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etRegFName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionGo"
+                    android:hint="full name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/white"
+                    android:textColorHint="#7A8089"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_PhoneNumber"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:boxCornerRadiusTopStart="30dp"
+                app:boxCornerRadiusBottomEnd="30dp"
+                app:boxCornerRadiusBottomStart="30dp"
+                app:boxCornerRadiusTopEnd="30dp"
+                >
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etRegPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionGo"
+                    android:hint="phone number"
+                    android:inputType="phone"
+                    android:textColor="@color/white"
+                    android:textColorHint="#7A8089"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_username"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:boxCornerRadiusTopStart="30dp"
+                app:boxCornerRadiusBottomEnd="30dp"
+                app:boxCornerRadiusBottomStart="30dp"
+                app:boxCornerRadiusTopEnd="30dp"
+                >
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etRegEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionGo"
+                    android:hint="email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/white"
+                    android:textColorHint="#7A8089"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_RegPassword"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:passwordToggleEnabled="true"
+                app:boxCornerRadiusTopStart="30dp"
+                app:boxCornerRadiusBottomEnd="30dp"
+                app:boxCornerRadiusBottomStart="30dp"
+                app:boxCornerRadiusTopEnd="30dp"
+                >
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etRegPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionGo"
+                    android:hint="password"
+                    android:inputType="textPassword"
+                    android:textColor="#363A43"
+                    android:textColorHint="@color/white"
+                    android:autofillHints="password"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_ConfPassword"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:passwordToggleEnabled="true"
+                app:boxCornerRadiusTopStart="30dp"
+                app:boxCornerRadiusBottomEnd="30dp"
+                app:boxCornerRadiusBottomStart="30dp"
+                app:boxCornerRadiusTopEnd="30dp"
+                >
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etConfPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionGo"
+                    android:hint="confirm password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/white"
+                    android:textColorHint="#7A8089"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/tvDontHaveAct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="already have an account?"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    />
+
+                <FrameLayout
+                    android:id="@+id/flRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="sign in "
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:onClick="login"
+                        />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/item_register_background"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="-10dp"
+                        android:layout_marginTop="0dp"
+                        />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="25dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:padding="1dp"
+                >
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/red"
+                    android:background="@drawable/btn_bg_cancel"
+                    android:text="cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"/>
+
+                <Button
+                    android:id="@+id/btnReg"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_bg_white"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="sign up"
+                    android:textAllCaps="false"
+                    android:textColor="#3a6fa3"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</LinearLayout>

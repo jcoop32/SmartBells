@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background">#cae9ff</color>
+    <color name="textPrimary">#1b4965</color>
+    <color name="accentText">#62b6cb</color>
+    <color name="accent">#5fa8d3</color>
+    <color name="red">#d90429</color>
+    <color name="green">#55a630</color>
+
+
+    <color name="edt_pressed">#FFFFFF</color>
+    <color name="edt_focused">#FFFFFF</color>
+    <color name="edt_default">#FFFFFF</color>
+
+
+</resources>

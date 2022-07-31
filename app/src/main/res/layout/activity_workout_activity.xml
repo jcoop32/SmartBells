@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkoutActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bgtest5"
+    android:padding="10dp"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarExercise"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:titleTextColor="@color/background"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TextView
+        android:id="@+id/tvWorkoutName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="'Workout Name'"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="25dp"
+        />
+
+    <Button
+        android:id="@+id/btnRepIncrease"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="current reps"
+        android:textColor="#3a6fa3"
+        android:textAllCaps="false"
+        android:background="@drawable/btn_bg_white"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tvRepValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="75dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+
+        />
+    <TextView
+        android:id="@+id/tvSets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sets"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+
+        />
+
+    <TextView
+        android:id="@+id/tvSetValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+
+
+        <TextView
+            android:id="@+id/tvRepTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="total reps"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tvRepTotalValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+
+    <Button
+        android:id="@+id/btnWorkoutReset"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="reset"
+        android:textAllCaps="false"
+        android:background="@drawable/btn_bg_cancel"
+        android:textColor="@color/red"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/btnWorkoutFinish"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="finish"
+        android:textAllCaps="false"
+        android:textColor="#3a6fa3"
+        android:background="@drawable/btn_bg_white"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+
+
+
+
+
+</LinearLayout>
