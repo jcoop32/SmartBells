@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Smartbells">
         <activity
+            android:name=".WorkoutHistory"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilePage"
+            android:exported="false" />
+        <activity
             android:name=".HomePageActivity"
             android:exported="false" />
         <activity

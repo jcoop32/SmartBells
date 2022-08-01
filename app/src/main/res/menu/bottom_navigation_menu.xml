@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/profile"
+            android:enabled="true"
+            android:icon="@drawable/profile"
+            android:title="@string/profile"
+            />
+        <item
+            android:id="@+id/history"
+            android:enabled="true"
+            android:icon="@drawable/history"
+            android:title="@string/history"/>
+
+        <item
+            android:id="@+id/itWorkout"
+            android:enabled="true"
+            android:icon="@drawable/workout"
+            android:title="@string/workout"/>
+
+        "<!-- <item
+            android:id="@+id/device"
+            android:enabled="true"
+            android:icon="@drawable/deviceconnecthp"
+            android:title="@string/device"
+            /> -->"
+
+
+    </group>
+
+</menu>

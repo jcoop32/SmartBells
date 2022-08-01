@@ -19,6 +19,10 @@
     <string name="edittext_hint"><font size="35">weight</font></string>
     <string name="registration_successful">Registration Successful</string>
     <string name="reg_unsuccesful">Registration Unsuccessful. Please make sure all fields are correct.</string>
+    <string name="history">History</string>
+    <string name="workout">Workout</string>
+    <string name="device">Device</string>
+    <string name="profile">Profile</string>
 
 
 </resources>

@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         val preferences = getSharedPreferences("checkbox", MODE_PRIVATE)
         val checkbox = preferences.getString("remember", "")
         if (checkbox.equals("true")){
-            val intent = Intent(this@MainActivity, UserInputActivity::class.java)
+            val intent = Intent(this@MainActivity, HomePageActivity::class.java)
             startActivity(intent)
         }else if (checkbox.equals("false")){
             Toast.makeText(this, "please login", Toast.LENGTH_SHORT).show()
@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
             }else if (binding?.etPassword?.text.toString().isNotEmpty() && binding?.etPassword?.text.toString().isNotEmpty()){
                 firebaseAuth.signInWithEmailAndPassword(binding?.etEmail?.text.toString(), binding?.etPassword?.text.toString()).addOnCompleteListener{
                     if (it.isSuccessful){
-                        val intent = Intent(this@MainActivity, UserInputActivity::class.java)
+                        val intent = Intent(this@MainActivity, HomePageActivity::class.java)
                         startActivity(intent)
                         finish()
                     }else{
