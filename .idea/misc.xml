@@ -3,16 +3,29 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/joshu/AndroidStudioProjects/smartbellstest8.0/app/src/main/res/drawable-v24/bg_border_back.xml" value="0.3205" />
+        <entry key="..\:/Users/joshu/AndroidStudioProjects/smartbellstest8.0/app/src/main/res/drawable-v24/bg_border_et_white.xml" value="0.3205" />
+        <entry key="..\:/Users/joshu/AndroidStudioProjects/smartbellstest8.0/app/src/main/res/drawable-v24/bg_spinner.xml" value="0.3205" />
         <entry key="..\:/Users/joshu/AndroidStudioProjects/smartbellstest8.0/app/src/main/res/drawable/bottom_nav_selection.xml" value="0.174" />
         <entry key="..\:/Users/joshu/AndroidStudioProjects/smartbellstest8.0/app/src/main/res/drawable/nav_background_curved.xml" value="0.3215" />
         <entry key="..\:/Users/joshu/AndroidStudioProjects/smartbellstest8.0/app/src/main/res/drawable/selector.xml" value="0.174" />
+        <entry key="..\:/Users/joshu/AndroidStudioProjects/smartbellstest8.0/app/src/main/res/layout/activity_finish.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/joshu/AndroidStudioProjects/smartbellstest8.0/app/src/main/res/layout/activity_front_page.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/joshu/AndroidStudioProjects/smartbellstest8.0/app/src/main/res/layout/activity_home_page.xml" value="0.1" />
+        <entry key="..\:/Users/joshu/AndroidStudioProjects/smartbellstest8.0/app/src/main/res/layout/activity_home_navigation.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/joshu/AndroidStudioProjects/smartbellstest8.0/app/src/main/res/layout/activity_home_page.xml" value="0.25" />
+        <entry key="..\:/Users/joshu/AndroidStudioProjects/smartbellstest8.0/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Users/joshu/AndroidStudioProjects/smartbellstest8.0/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/joshu/AndroidStudioProjects/smartbellstest8.0/app/src/main/res/layout/activity_profile_page.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/joshu/AndroidStudioProjects/smartbellstest8.0/app/src/main/res/layout/activity_register.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/joshu/AndroidStudioProjects/smartbellstest8.0/app/src/main/res/layout/activity_user_input.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/joshu/AndroidStudioProjects/smartbellstest8.0/app/src/main/res/layout/activity_workout_activity.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/joshu/AndroidStudioProjects/smartbellstest8.0/app/src/main/res/layout/activity_workout_history.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/joshu/AndroidStudioProjects/smartbellstest8.0/app/src/main/res/layout/custom_dialog_back.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/joshu/AndroidStudioProjects/smartbellstest8.0/app/src/main/res/layout/fragment_history.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/joshu/AndroidStudioProjects/smartbellstest8.0/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/joshu/AndroidStudioProjects/smartbellstest8.0/app/src/main/res/layout/fragment_workout.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/joshu/AndroidStudioProjects/smartbellstest8.0/app/src/main/res/layout/nav_bottom_selection.xml" value="0.365625" />
+        <entry key="..\:/Users/joshu/AndroidStudioProjects/smartbellstest8.0/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/joshu/AndroidStudioProjects/smartbellstest8.0/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.1" />
       </map>
     </option>

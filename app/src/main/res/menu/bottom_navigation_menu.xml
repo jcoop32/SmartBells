@@ -1,11 +1,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group>
         <item
-            android:id="@+id/profile"
+            android:id="@+id/home"
             android:enabled="true"
-            android:icon="@drawable/profile"
-            android:title="@string/profile"
-            />
+            android:icon="@drawable/home"
+            android:title="Home" />
         <item
             android:id="@+id/history"
             android:enabled="true"

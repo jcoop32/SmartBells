@@ -1,180 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:orientation="vertical"
-    android:background="@drawable/bgtest5"
-    android:padding="10dp"
-    >
+    tools:context=".MainActivity">
 
-    <View
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="180dp"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tv_title"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="smartbells"
-                android:textColor="@color/white"
-                android:textSize="30sp"
-                android:letterSpacing="0.08"
-                android:layout_marginBottom="16sp"
-                />
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/til_name"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                app:boxCornerRadiusTopStart="30dp"
-                app:boxCornerRadiusBottomEnd="30dp"
-                app:boxCornerRadiusBottomStart="30dp"
-                app:boxCornerRadiusTopEnd="30dp"
-                android:backgroundTint="@color/white"
-                >
-
-                <androidx.appcompat.widget.AppCompatEditText
-                    android:id="@+id/etEmail"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:imeOptions="actionGo"
-                    android:hint="email"
-                    android:inputType="textEmailAddress"
-                    android:textColor="@color/white"
-                    android:textColorHint="@color/white"
-                    />
-
-            </com.google.android.material.textfield.TextInputLayout>
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/til_password"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                app:passwordToggleEnabled="true"
-                app:boxCornerRadiusTopStart="30dp"
-                app:boxCornerRadiusBottomEnd="30dp"
-                app:boxCornerRadiusBottomStart="30dp"
-                app:boxCornerRadiusTopEnd="30dp"
-                >
-
-                <androidx.appcompat.widget.AppCompatEditText
-                    android:id="@+id/etPassword"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:imeOptions="actionGo"
-                    android:hint="password"
-                    android:inputType="textPassword"
-                    android:textColor="@color/white"
-                    android:textColorHint="@color/white"
-                    />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-                <CheckBox
-                    android:id="@+id/cbRemember"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="remember me"
-                    android:textColor="@color/white"
-                    android:textSize="15sp"
-                    android:layout_marginLeft="15dp"
-                    android:onClick="checkedBox"
-
-
-                    />
-
-            <LinearLayout
-                android:layout_marginTop="8dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center"
-                android:gravity="center"
-                >
-
-                <TextView
-                    android:id="@+id/tvDontHaveAct"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="don't have an account?"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:textColor="@color/white"
-                    />
-
-                <FrameLayout
-                    android:id="@+id/flRegister"
-                    android:layout_width="wrap_content"
-                    android:layout_height="25dp"
-                    android:layout_gravity="center"
-                    >
-
-                    <TextView
-                        android:id="@+id/tvRegister"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="sign up  "
-                        android:textColor="@color/white"
-                        android:textStyle="bold"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:layout_marginLeft="5dp"
-                        android:onClick="register"
-                        />
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="45dp"
-                        android:background="@drawable/item_register_background"
-                        android:layout_marginStart="6dp"
-                        android:layout_marginEnd="-10dp"
-                        android:layout_marginTop="0dp"
-                        />
-                </FrameLayout>
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="25dp"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
-
-                <Button
-                    android:id="@+id/btnNext"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:text="login"
-                    android:textColor="#3a6fa3"
-                    android:background="@drawable/btn_bg_white"
-                    android:textAllCaps="false"
-
-                    android:textSize="18sp"
-
-                    />
-
-            </LinearLayout>
-
-
-        </LinearLayout>
-
-
+        android:layout_height="match_parent"
+        android:text="smartbells™"
+        android:letterSpacing="0.08"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="55sp"
+        android:textColor="#3a6fa3" />
 
 </LinearLayout>

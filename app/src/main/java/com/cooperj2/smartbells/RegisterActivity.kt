@@ -58,7 +58,7 @@ class RegisterActivity : AppCompatActivity() {
                         database.child("users").child(phoneNumber).setValue(Users(name, email))
                         binding?.tvRegSuccess?.visibility = View.VISIBLE
                         binding?.tvRegUnsuccess?.visibility = View.INVISIBLE
-                        val intent = Intent(this@RegisterActivity, MainActivity::class.java)
+                        val intent = Intent(this@RegisterActivity, LoginActivity::class.java)
                         intent.putExtra("namef", name)
                         startActivity(intent)
                         finish()
@@ -85,7 +85,7 @@ class RegisterActivity : AppCompatActivity() {
         customDialog.setCanceledOnTouchOutside(false)
         dialogBinding.btnYes.setOnClickListener {
             Toast.makeText(this, "Registration Canceled", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this@RegisterActivity, MainActivity::class.java)
+            val intent = Intent(this@RegisterActivity, LoginActivity::class.java)
             startActivity(intent)
             finish()
         }
@@ -96,7 +96,7 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     fun login(view: View) {
-        val intent = Intent(this@RegisterActivity, MainActivity::class.java)
+        val intent = Intent(this@RegisterActivity, LoginActivity::class.java)
         startActivity(intent)
 
     }

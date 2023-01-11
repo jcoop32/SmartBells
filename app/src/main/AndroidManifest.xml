@@ -10,16 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Smartbells">
         <activity
-            android:name=".WorkoutHistory"
-            android:exported="false" />
-        <activity
             android:name=".ProfilePage"
-            android:exported="false" />
+            android:exported="true" />
+
         <activity
-            android:name=".HomePageActivity"
-            android:exported="false" />
-        <activity
-            android:name=".FrontPageActivity"
+            android:name=".MainActivity"
             android:exported="true" />
         <activity
             android:name=".RegisterActivity"
@@ -34,7 +29,7 @@
             android:name=".WorkoutActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

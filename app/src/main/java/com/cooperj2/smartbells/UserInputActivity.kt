@@ -100,11 +100,6 @@ class UserInputActivity : AppCompatActivity() {
 
     }
 
-    private fun customDialogForBackButton(){
-
-        val goBack = Intent(this@UserInputActivity, MainActivity::class.java)
-        startActivity(goBack)
-    }
 
     fun plusFive(view: View) {
         weightInc+=5
@@ -124,15 +119,23 @@ class UserInputActivity : AppCompatActivity() {
         binding?.etWeight?.text = "$weightInc"
 
     }
+
     fun minusTen(view: View) {
-        weightInc-=10
+        weightInc -= 10
         binding?.etWeight?.text = "$weightInc"
 
     }
+
     fun plusTen(view: View) {
-        weightInc+=10
+        weightInc += 10
         binding?.etWeight?.text = "$weightInc"
     }
-    
+
+    private fun customDialogForBackButton() {
+
+        val goBack = Intent(this@UserInputActivity, LoginActivity::class.java)
+        startActivity(goBack)
+    }
+
 }
 

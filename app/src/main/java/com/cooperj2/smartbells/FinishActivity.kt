@@ -58,7 +58,7 @@ class FinishActivity : AppCompatActivity() {
 
         customDialog.setCanceledOnTouchOutside(false)
         dialogBinding.btnYes.setOnClickListener {
-            val intent = Intent(this@FinishActivity, MainActivity::class.java)
+            val intent = Intent(this@FinishActivity, LoginActivity::class.java)
             startActivity(intent)
             finish()
         }
